@@ -5,6 +5,8 @@ import dlindustries.vigillant.system.utils.EncryptedString;
 public enum Category {
 	sword(EncryptedString.of("Sword")),
 	CRYSTAL(EncryptedString.of("Crystal")),
+	pot(EncryptedString.of("Potions")),
+	mace(EncryptedString.of("Mace")),
 	optimizer(EncryptedString.of("Optimizer")),
 	RENDER(EncryptedString.of("Render")),
 

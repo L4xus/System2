@@ -13,6 +13,8 @@ import dlindustries.vigillant.system.utils.rotation.Rotation;
 import net.minecraft.client.render.RenderTickCounter;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.AxeItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.MaceItem;
 import net.minecraft.item.SwordItem;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.math.MathHelper;
@@ -24,6 +26,7 @@ public final class AimAssist extends Module implements HudListener, MouseMoveLis
 			.setDescription(EncryptedString.of("Aims at the last attacked player"));
 
 	private final BooleanSetting onlyWeapon = new BooleanSetting(EncryptedString.of("Only Weapon"), true);
+	private final BooleanSetting mace = new BooleanSetting(EncryptedString.of("Only mace"), true);
 
 	private final BooleanSetting onLeftClick = new BooleanSetting(EncryptedString.of("On Left Click"), false)
 			.setDescription(EncryptedString.of("Only gets triggered if holding down left click"));
@@ -86,7 +89,7 @@ public final class AimAssist extends Module implements HudListener, MouseMoveLis
 				-1,
 				Category.sword);
 
-		addSettings(stickyAim, onlyWeapon, onLeftClick, aimAt, stopAtTargetVertical, stopAtTargetHorizontal, radius, seeOnly, lookAtNearest, fov, pitchSpeed, yawSpeed, speedChange, randomization, yawAssist, pitchAssist, waitFor, lerp, posMode);
+		addSettings(stickyAim, onlyWeapon, mace, onLeftClick, aimAt, stopAtTargetVertical, stopAtTargetHorizontal, radius, seeOnly, lookAtNearest, fov, pitchSpeed, yawSpeed, speedChange, randomization, yawAssist, pitchAssist, waitFor, lerp, posMode);
 	}
 
 	@Override
@@ -119,8 +122,16 @@ public final class AimAssist extends Module implements HudListener, MouseMoveLis
 		if (mc.player == null || mc.currentScreen != null)
 			return;
 
-		if (onlyWeapon.getValue() && !(mc.player.getMainHandStack().getItem() instanceof SwordItem || mc.player.getMainHandStack().getItem() instanceof AxeItem))
-			return;
+		Item heldItem = mc.player.getMainHandStack().getItem();
+		if (mace.getValue()) {
+			// Mace-only mode
+			if (!(heldItem instanceof MaceItem)) return;
+		} else if (onlyWeapon.getValue()) {
+			// Weapon-only mode (includes maces)
+			if (!(heldItem instanceof SwordItem || heldItem instanceof AxeItem || heldItem instanceof MaceItem))
+				return;
+		}
+
 
 		if (onLeftClick.getValue() && GLFW.glfwGetMouseButton(mc.getWindow().getHandle(), GLFW.GLFW_MOUSE_BUTTON_LEFT) != GLFW.GLFW_PRESS)
 			return;

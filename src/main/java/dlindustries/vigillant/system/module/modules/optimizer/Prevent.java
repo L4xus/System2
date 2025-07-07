@@ -22,7 +22,7 @@ public final class Prevent extends Module implements ItemUseListener, AttackList
 	private final BooleanSetting anchorOnAnchor = new BooleanSetting(EncryptedString.of("Anchor on Anchor"), false)
 			.setDescription(EncryptedString.of("Makes it so you can't place an anchor on/next to another anchor unless charged"));
 	private final BooleanSetting obiPunch = new BooleanSetting(EncryptedString.of("Auto-crystal bypass"), true)
-			.setDescription(EncryptedString.of("Makes it so you can crystal faster by not letting you left click/start breaking the obsidian"));
+			.setDescription(EncryptedString.of("Removes multiactions flags and packet order flags from Grim up to 80%"));
 	private final BooleanSetting echestClick = new BooleanSetting(EncryptedString.of("E-chest click"), true)
 			.setDescription(EncryptedString.of("Makes it so you can't click on e-chests with PvP items"));
 

@@ -45,5 +45,4 @@ public final class ModeSetting<T extends Enum<T>> extends Setting<ModeSetting<T>
 	public boolean isMode(T mode) {
 		return index == possibleValues.indexOf(mode);
 	}
-
 }

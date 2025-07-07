@@ -16,9 +16,6 @@ import org.lwjgl.glfw.GLFW;
 public final class SelfDestruct extends Module {
 	public static boolean destruct = false;
 
-	private final KeybindSetting activateKey = new KeybindSetting(EncryptedString.of("Activate Key"), GLFW.GLFW_KEY_DELETE, false);
-
-
 	private final BooleanSetting replaceMod = new BooleanSetting(EncryptedString.of("Replace Mod"), true)
 			.setDescription(EncryptedString.of("Replaces the mod with the original JAR file"));
 
@@ -31,9 +28,9 @@ public final class SelfDestruct extends Module {
 	public SelfDestruct() {
 		super(EncryptedString.of("Self Destruct"),
 				EncryptedString.of("Kills the system and destroys all traces of using this client. The client mod will be replaced as Marlow's crystal optimizer"),
-				-1,  // Placeholder (real keybind is handled by destructKey)
+				-1,
 				Category.CLIENT);
-		addSettings(activateKey, replaceMod, saveLastModified, downloadURL);
+		addSettings(replaceMod, saveLastModified, downloadURL);
 	}
 
 	@Override
@@ -48,7 +45,7 @@ public final class SelfDestruct extends Module {
 		system.INSTANCE.getModuleManager().getModule(ClickGUI.class).setEnabled(false);
 		setEnabled(false);
 
-		// Rest of your self-destruct logic...
+
 		system.INSTANCE.getProfileManager().saveProfile();
 
 		if (mc.currentScreen instanceof ClickGui) {

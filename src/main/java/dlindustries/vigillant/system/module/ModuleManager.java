@@ -4,7 +4,12 @@ import dlindustries.vigillant.system.event.events.ButtonListener;
 import dlindustries.vigillant.system.module.modules.client.ClickGUI;
 import dlindustries.vigillant.system.module.modules.client.SelfDestruct;
 import dlindustries.vigillant.system.module.modules.crystal.*;
+
+import dlindustries.vigillant.system.module.modules.mace.*;
+import dlindustries.vigillant.system.module.modules.mace.FireworkMacro;
 import dlindustries.vigillant.system.module.modules.optimizer.*;
+import dlindustries.vigillant.system.module.modules.pot.AutoPot;
+import dlindustries.vigillant.system.module.modules.pot.AutoPotRefill;
 import dlindustries.vigillant.system.module.modules.render.HUD;
 import dlindustries.vigillant.system.module.modules.render.NoBounce;
 import dlindustries.vigillant.system.module.modules.render.TargetHud;
@@ -49,6 +54,14 @@ public final class ModuleManager implements ButtonListener {
 		add(new KeyPearl());
 		add(new DhandMod());
 
+		//mace
+
+		add(new BreachSwap());
+		add(new DiveBomber());
+		add(new FireworkMacro());
+		add(new KeyWindCharge());
+
+
 		//optimizer
 		add(new Prevent());
 		add(new AutoXP());
@@ -60,6 +73,7 @@ public final class ModuleManager implements ButtonListener {
 		add(new Sprint());
 		add(new CameraOptimizer());
 		add(new PlacementOptimizer());
+		add(new HitOptimizer());
 
 		//Render
 		add(new HUD());
