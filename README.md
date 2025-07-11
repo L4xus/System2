@@ -83,7 +83,7 @@ This fork is approximately **75% based on the original Argon**, but with focused
 
 ![gui](https://github.com/user-attachments/assets/105ce9a6-8dfd-446d-9b79-277b9ec9e015)
 
-![Image]([https://github.com/user-attachments/assets/81a349a4-01f3-43d8-8728-928a8af3e916](https://github.com/user-attachments/assets/de29cb28-7a15-4c05-a0f4-62c18072dddb))
+![Screenshot ](https://github.com/user-attachments/assets/ec2128d5-e158-4aea-93ce-b9c55f5418e0)
 
 ![Screenshot ](https://github.com/user-attachments/assets/23832c9f-33e0-438f-86b9-a5bc885b9ee2)
 ![Screenshot ](https://github.com/user-attachments/assets/b5747333-413d-40ad-b40c-35d272b5d9b6)
