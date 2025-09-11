@@ -53,7 +53,7 @@ public final class HUD extends Module implements HudListener {
 					RenderUtils.unscaledProjection();
 
 					// Icon Background & Icon
-					Identifier hudIconId = Identifier.of("system", "images/cat.png");
+					Identifier hudIconId = Identifier.of("Pumyum Client", "images/cat.png");
 					int iconSize = 60;           // Updated from 80 to 88
 					int iconX = 10;              // Moved right to leave space for background
 					int iconY = 10;              // Added a top offset so background can cover icon vertically
@@ -65,7 +65,7 @@ public final class HUD extends Module implements HudListener {
 					String serverName = (mc.getCurrentServerEntry() == null
 							? "None"
 							: mc.getCurrentServerEntry().address);
-					String buildString = "System";
+					String buildString = "Pumyum Client";
 					String hudText = String.format(
 							"%s | %s | %s",
 							buildString,
