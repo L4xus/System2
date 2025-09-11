@@ -3,10 +3,10 @@ package dlindustries.vigillant.system.module;
 import dlindustries.vigillant.system.utils.EncryptedString;
 
 public enum Category {
-	sword(EncryptedString.of("Sword")),
-	CRYSTAL(EncryptedString.of("Crystal")),
-	pot(EncryptedString.of("Potions")),
-	mace(EncryptedString.of("Mace")),
+	sword(EncryptedString.of("SMP")),
+	CRYSTAL(EncryptedString.of("CPVP")),
+	pot(EncryptedString.of("POT")),
+	mace(EncryptedString.of("MACE")),
 	optimizer(EncryptedString.of("Optimizer")),
 	RENDER(EncryptedString.of("Render")),
 
