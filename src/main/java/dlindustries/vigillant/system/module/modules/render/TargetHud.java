@@ -44,7 +44,7 @@ public final class TargetHud extends Module implements HudListener, PacketSendLi
 
 	public TargetHud() {
 		super(EncryptedString.of("Target HUD"),
-				EncryptedString.of("Gives you information about the enemy player"),
+				EncryptedString.of("Acts like a info hud"),
 				-1,
 				Category.RENDER);
 		addSettings(xCoord, yCoord, hudTimeout);
