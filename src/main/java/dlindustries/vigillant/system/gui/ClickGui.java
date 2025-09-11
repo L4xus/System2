@@ -54,7 +54,7 @@ public final class ClickGui extends Screen {
 		String playerText = "Player | " + playerName;
 
 		// System Text
-		String systemText = "Credits: Deepseek R1, lvstrng, DL-industries";
+		String systemText = "Credits: Deepseek R1, Open source System";
 
 		int screenWidth = mc.getWindow().getScaledWidth();
 		int screenHeight = mc.getWindow().getScaledHeight();
