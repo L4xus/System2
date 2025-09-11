@@ -17,7 +17,7 @@ import java.awt.*;
 import java.util.List;
 
 public final class HUD extends Module implements HudListener {
-	private static final CharSequence system = EncryptedString.of("System |");
+	private static final CharSequence system = EncryptedString.of("Pumyum Client |");
 	private final BooleanSetting info = new BooleanSetting(EncryptedString.of("Info"), true);
 	private final BooleanSetting modules = new BooleanSetting("Modules", false)
 			.setDescription(EncryptedString.of("Renders module array list"));
