@@ -24,58 +24,20 @@
 https://github.com/LvStrnggg/argon/
 
 
-This fork is approximately **75% based on the original Argon**, but with focused optimizations for **bypassing Vulcan** and reducing flagging on **Grim Anticheat**. It's a graphics and anticheat-optimized version of Argon with the following key changes:
-
-- **Legit Autototem (HoverTotem-Like)**
-    - Introduced **dynamic delay** to simulate human-like behavior
-    - removed autoswitch due to unstable bypasses from argon
-
-- **Dhandmod integration**
-    - basically autoswitch subfunction from hovertotem of argon but without padpackets and impossibleslot action and impossible human time
-    - does not flag on any anticheat - for now
-    - can choose your totem slot
-    - can customize automation timings
-
-- **Misclick Optimizer**
-    - Rewritten and extended from Argon's original
-    - Prevents **packet order B flags** (Grim)
-    - Reduces **Multiactions F flagging**
-    - Best paired with **AutoCrystal** and **Anchor Macro**
-
-- **KeyPearl Enhancements**
-    - Added **switchback slot selection** for faster **double-tapping** and **pearl flashing**
-    - Eliminates **packet order B flagging** from original
-
-- **Placement Optimizer**
-    - Allows faster crystal placement pair with autocrystal, removing 2 tick placement delay - bypasses vulcan and grim
-    - allows quick block up useful for cpvp
-    - Now includes **anchor exclusion** to improve legit like gameplay with Anchor Macro
-
-- **Target HUD Improvements**
-    - Sleeker and cleaner design
-    - Displays **extra opponent information** for PvP clarity
-
-- **Camera Optimizer**
-    - Improved camera control for better PvP experience such as no clip and water+ lava visual optimizers
-    - Designed to work well with **Freelook mod**
-
-- **And alot more tiny adjustments**
 > ⚠️ Note: This is not a full rewrite — it's still fundamentally Argon, but with meaningful tweaks to **bypass**, **optimize**, and **refine** both visuals and behavior for smoother gameplay under grim anticheat and vulcan.
 
 
 
 
 
-## How to use System
+## How to use the client
 
-1. Download the latest version of system (Jar file only)
-2. If you haven't already knew, you are required to download fabric api jar to be run alongside system, and use fabric loader for 1.21.1 or 1.21 to launch system. there are youtube tutorials for this
-3. move the system jar into your minecraft mods folder.
+1. Download the latest version of the mod (Jar file only)
+2. If you haven't already knew, you are required to download fabric api jar to be run alongside the mod and use fabric loader for 1.21.1 or 1.21 to launch it. there are youtube tutorials for this
+3. move the mod jar into your minecraft mods folder.
 4. launch minecraft using fabric loader 1.21.1 or 1.21
-5. build a suitable configuration for the servers you are targeting to bypass - keep reading read.me for config guide
-6. Enjoy System!
-
-> if an issue still coccurs, please send your crash log "latest.log" in my discord server for troubleshooting.
+5. build a suitable configuration for the servers you are targeting to bypass 
+6. Enjoy
 
 
 ## GUI
@@ -126,15 +88,6 @@ Most modules bypasses. If you want safety, then:
 
 **This is only a guide/general idea. For your own safety, i HIGHLY recommend you test your configs on a anticheat test server. BEFORE playing any of your favourite servers.**
 
-
-
-
-
-
-## Issues
-
-If you notice any bugs or missing features, you can let us know by opening an issue [here](https://github.com/DLindustries/System/issues).
-
 ## License
 
 This project is subject to the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html). This does only apply for source code located directly in this clean repository. During the development and compilation process, additional source code may be used to which we have obtained no rights. Such code is not covered by the GPL license.
@@ -154,20 +107,11 @@ For those who are unfamiliar with the license, here is a summary of its main poi
 
 ## Developing System
 
-System uses Gradle to build the client. Install the latest version of Gradle onto your computer and install IntelliJ IDEA Ultimate, or use the free community edition.
+This mod uses Gradle to build the client. Install the latest version of Gradle onto your computer and install IntelliJ IDEA Ultimate, or use the free community edition.
 
 1. Clone the repository using `git clone --recurse-submodules https://github.com/DLindustries/System`.
 2. CD into the local repository with the command `cd System`.
 3. Run `./gradlew genSources`.
 4. Open the folder in IntelliJ — feel free to recode the client.
 5. To build, simply run `./gradlew build` or create a run configuration for Gradle with the build command.
-6. Enjoy System! :D
-
-## Addition info
-
-For those who are saying skid this IS a repaste of argon with extended utillities and improved modules to reduce anticheat flags on grim
-## Contributing
-
-We appreciate contributions. So if you want to support us, feel free to make changes to System's source code and submit a pull request
-
-TY enjoy System
+6. Enjoy
