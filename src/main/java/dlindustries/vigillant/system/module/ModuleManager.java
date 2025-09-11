@@ -13,6 +13,7 @@ import dlindustries.vigillant.system.module.modules.pot.AutoPotRefill;
 import dlindustries.vigillant.system.module.modules.render.HUD;
 import dlindustries.vigillant.system.module.modules.render.NoBounce;
 import dlindustries.vigillant.system.module.modules.render.TargetHud;
+import dlindustries.vigillant.system.module.modules.render.ESP;
 import dlindustries.vigillant.system.module.modules.sword.*;
 import dlindustries.vigillant.system.module.setting.KeybindSetting;
 import dlindustries.vigillant.system.system;
