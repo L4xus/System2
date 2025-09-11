@@ -47,8 +47,8 @@ public final class ClickGUI extends Module implements PacketReceiveListener {
 	}
 
 	public ClickGUI() {
-		super(EncryptedString.of("System"),
-				EncryptedString.of("Client developed by DL-industries"),
+		super(EncryptedString.of("PumyumClient"),
+				EncryptedString.of("Client developed by pumyum"),
 				GLFW.GLFW_KEY_RIGHT_SHIFT,
 				Category.CLIENT);
 
