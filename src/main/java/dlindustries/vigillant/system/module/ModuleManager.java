@@ -78,7 +78,7 @@ public final class ModuleManager implements ButtonListener {
 		//Render
 		add(new HUD());
 		add(new NoBounce());
-   add(new ESP());
+  add(new ESP());
 		add(new TargetHud());
 
 		//Client
