@@ -23,7 +23,7 @@ public final class ClickGui extends Screen {
 	public List<Window> windows = new ArrayList<>();
 	public Color currentColor;
 
-	private static final Identifier BACKGROUND_IMAGE = Identifier.of("system", "images/background-army.png");
+	private static final Identifier BACKGROUND_IMAGE = Identifier.of("pumyum client", "images/background-army.png");
 
 	public ClickGui() {
 		super(Text.empty());
