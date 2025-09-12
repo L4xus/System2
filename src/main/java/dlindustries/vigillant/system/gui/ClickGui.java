@@ -51,7 +51,7 @@ public final class ClickGui extends Screen {
 
 		// Player Name
 		String playerName = mc.player.getName().getString();
-		String playerText = "Player | " + playerName;
+		String playerText = "IGN | " + playerName;
 
 		// System Text
 		String systemText = "Credits: Deepseek R1, Open source System";
