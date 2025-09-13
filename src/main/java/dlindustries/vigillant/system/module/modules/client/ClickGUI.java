@@ -53,9 +53,9 @@ public final class ClickGUI extends Module implements PacketReceiveListener {
 				Category.CLIENT);
 
 		// Force initial shadow blue values
-		red.setValue(10);
-		green.setValue(10);
-		blue.setValue(50);
+		red.setValue(209);
+		green.setValue(69);
+		blue.setValue(44);
 
 		// Add the new setting to the settings list
 		addSettings(alphaWindow, breathing, background, backgroundImage, preventClose,
