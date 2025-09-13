@@ -52,7 +52,7 @@ public final class ClickGUI extends Module implements PacketReceiveListener {
 				GLFW.GLFW_KEY_RIGHT_SHIFT,
 				Category.CLIENT);
 
-		// Force initial shadow blue values
+		// Force initial red values
 		red.setValue(209);
 		green.setValue(69);
 		blue.setValue(44);
