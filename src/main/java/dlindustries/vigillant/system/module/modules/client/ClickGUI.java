@@ -15,9 +15,9 @@ import org.lwjgl.glfw.GLFW;
 
 public final class ClickGUI extends Module implements PacketReceiveListener {
 	// Existing color settings
-	public static final NumberSetting red = new NumberSetting(EncryptedString.of("Red"), 0, 255, 10, 1);
-	public static final NumberSetting green = new NumberSetting(EncryptedString.of("Green"), 0, 255, 10, 1);
-	public static final NumberSetting blue = new NumberSetting(EncryptedString.of("Blue"), 0, 255, 50, 1);
+	public static final NumberSetting red = new NumberSetting(EncryptedString.of("Red"), 0, 255, 209, 1);
+	public static final NumberSetting green = new NumberSetting(EncryptedString.of("Green"), 0, 255, 69, 1);
+	public static final NumberSetting blue = new NumberSetting(EncryptedString.of("Blue"), 0, 255, 44, 1);
 
 	public static final NumberSetting alphaWindow = new NumberSetting(EncryptedString.of("Window Alpha"), 0, 255, 180, 1);
 
